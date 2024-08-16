@@ -1,0 +1,73 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Fundo branco */
+  color: #333; /* Cor do texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: #007BFF; /* Alterado para azul */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #f4f4f9; /* Cor de fundo da carta mais suave */
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.advice {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+/* Estilo unificado para ambos os botões */
+.button, .translate-button {
+  width: 200px; /* Largura fixa dos botões */
+  padding: 15px 0; /* Espaçamento interno dos botões */
+  font-size: 1rem; /* Tamanho da fonte do texto dentro dos botões */
+  background-color: #007BFF; /* Cor azul dos botões */
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Arredondamento dos cantos dos botões */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  display: block; /* Garante que os botões sejam elementos de bloco e ocupem a largura definida */
+  margin: 10px auto; /* Espaçamento superior e inferior dos botões e centralização horizontal */
+}
+
+.button:hover, .translate-button:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  transform: scale(1.05);
+}
+
+/* Contêiner dos botões */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Empilha os botões verticalmente */
+  align-items: center; /* Centraliza os botões horizontalmente dentro do contêiner */
+  width: 100%;
+  max-width: 420px; /* Largura máxima do contêiner dos botões */
+  margin-top: 20px; /* Espaçamento superior do contêiner dos botões */
+}
